@@ -319,6 +319,7 @@ public class javaScratch {
             Additional notes:
                 to achieve an nthroot operation you need to use the Math.pow() method and provide a corresponding fraction for the exponent
         */
+       
     }
 
     static void scratch() {
@@ -331,7 +332,8 @@ public class javaScratch {
 
         //variables();
         //operators();
-        strings();
+        //strings();
+        math();
 
         //scratch();
 
