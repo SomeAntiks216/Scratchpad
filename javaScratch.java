@@ -306,8 +306,8 @@ public class javaScratch {
             Math.max(x, y)
             Math.min(x, y)
             Math.pow(x, y)
-            Math.sqrt(x, y)
-            Math.abs(x, y)
+            Math.sqrt(x)
+            Math.abs(x)
             Rounding methods
                 Math.round(x)
                 Math.ceil(x)
@@ -319,12 +319,32 @@ public class javaScratch {
             Additional notes:
                 to achieve an nthroot operation you need to use the Math.pow() method and provide a corresponding fraction for the exponent
         */
-       
+
+        int a = 2;
+        int b = 6;
+        int c = 8;
+        int d = 9;
+        int e = 10;
+        int f = 15;
+        int g = 19;
+        int h = -4;
+
+        System.out.println(Math.max(a, b)); // 6
+        System.out.println(Math.min(c, d)); // 8
+        System.out.println(Math.pow(b, a)); // 36
+        System.out.println(Math.sqrt(d)); // 3
+        System.out.println(Math.abs(h)); // 4
+        System.out.println(Math.round(5.5)); // 6
+        System.out.println(Math.ceil(4.3)); // 5
+        System.out.println(Math.floor(6.7)); // 6
+        System.out.println((int)(Math.random() * 51)); // random integer between 0 and 50
+
     }
 
     static void scratch() {
 
     }
+
     // Java files tend to use a main() function, which is automatically run by the program
     public static void main(String[] args) {
 
