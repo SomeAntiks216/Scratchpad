@@ -324,24 +324,24 @@ public class javaScratch {
         int b = 6;
         int c = 8;
         int d = 9;
-        int e = 10;
-        int f = 15;
-        int g = 19;
-        int h = -4;
+        int e = -4;
 
         System.out.println(Math.max(a, b)); // 6
         System.out.println(Math.min(c, d)); // 8
-        System.out.println(Math.pow(b, a)); // 36
-        System.out.println(Math.sqrt(d)); // 3
-        System.out.println(Math.abs(h)); // 4
+        System.out.println(Math.pow(b, a)); // 6^2 = 36
+        System.out.println(Math.sqrt(d)); // sqrt(9) = 3
+        System.out.println(Math.abs(e)); // |-4| = 4
         System.out.println(Math.round(5.5)); // 6
-        System.out.println(Math.ceil(4.3)); // 5
-        System.out.println(Math.floor(6.7)); // 6
-        System.out.println((int)(Math.random() * 51)); // random integer between 0 and 50
+        System.out.println(Math.ceil(4.3)); // 5.0 -- always rounds up
+        System.out.println(Math.floor(6.7)); // 6.0 -- always rounds down
+        System.out.println((int)(Math.random() * 51) + "\n"); // random integer between 0 and 50
 
     }
 
     static void scratch() {
+
+        // experimentation with small, independent builds
+
 
     }
 
@@ -360,5 +360,9 @@ public class javaScratch {
     }
 }
 
-// credit to W3Schools (https://www.w3schools.com/java/) for tutorial and, in part, organization and examples.
-// this file is under a Creative Commons Zero v1.0 Universal (CC0) license, and as such may be copied, modified, and distributed freely.
+/*
+credit to W3Schools (https://www.w3schools.com/java/) for tutorial and, in part, organization and examples.4
+credit to Princeton University (https://introcs.cs.princeton.edu/java/11precedence/) for in-depth description on operator precedence, including explanation of precedence of bitwise operators
+this file is under a Creative Commons Zero v1.0 Universal (CC0) license, and as such may be copied, modified, and distributed freely.
+see https://creativecommons.org/publicdomain/zero/1.0/deed.en for more information
+*/
