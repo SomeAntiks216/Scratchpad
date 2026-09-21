@@ -122,20 +122,61 @@ public class javaScratch {
                 && : logical AND : returns true if both statements are true
                 || : logical OR : returns true if either statement is true
                 ! : logical NOT : returns true if the statement is false (and vice-versa)
-            Precedence and order of operations
+            Precedence and order of operations (simplified)
                 parentheses ("()")
+                increment, not ("++", "--", "!", "~")
                 multiplication, division, modulus ("*", "/", "%")
-                addition, subtraction ("+", "-")
-                bitwise NOT ("~")
+                additive ("+" , "-")
                 bitwise shifts (">>", "<<")
+                relational (">", "<", ">=", "<=")
+                equality ("==", "!=")
                 bitwise AND ("&")
                 bitwise XOR ("^")
                 bitwise OR ("|")
-                comparison (">", "<", ">=", "<=")
-                equality ("==", "!=")
                 logical AND ("&&")
                 logical OR ("||")
                 assignment ("=")
+            Precedence and order of operations (expanded) (credit Princeton University)
+                [level] [operator]                      [associativity]
+                16      ()      parentheses             left-to-right
+                        []      array access   
+                        new     object creation
+                        .       member access
+                        ::      method reference
+                15      ++      unary post-increment    left-to-right
+                        --      unary post-decrement
+                14      +       unary plus              right-to-left
+                        -       unary minus
+                        !       unary logical NOT
+                        ~       unary bitwise NOT
+                        ++      unary pre-increment
+                        --      unary post-increment
+                13      ()      cast                    right-to-left
+                12      * / %   multiplicative          left-to-right
+                11      + -     additive                left-to-right
+                        +       concatenation
+                10      >> <<   bitwise shift           left-to-right
+                        >>>
+                9       < >     relational              left-to-right
+                        <= >=
+                        instanceOf
+                8       == !=   equality                left-to-right
+                7       &       bitwise AND             left-to-right
+                6       ^       bitwise XOR             left-to-right
+                5       |       bitwise OR              left-to-right
+                4       &&      logical AND             left-to-right
+                3       ||      logical OR              left-to-right
+                2       ?:      ternary                 left-to-right
+                1       =       assignment              right-to-left
+                        += -=
+                        *= /=
+                        %=
+                        &= ^= |=
+                        <<= >>=
+                        >>>=
+                0       ->      lambda expression       right-to-left
+                        ->      switch expression
+
         */
 
         int x = 7;
@@ -353,16 +394,18 @@ public class javaScratch {
         //variables();
         //operators();
         //strings();
-        math();
+        //math();
 
         //scratch();
 
     }
+    
 }
 
 /*
-credit to W3Schools (https://www.w3schools.com/java/) for tutorial and, in part, organization and examples.4
-credit to Princeton University (https://introcs.cs.princeton.edu/java/11precedence/) for in-depth description on operator precedence, including explanation of precedence of bitwise operators
+credit to W3Schools (https://www.w3schools.com/java/ as of 09/18/2026) for tutorial and, in part, organization and examples.4
+credit to Princeton University (https://introcs.cs.princeton.edu/java/11precedence/ as of 09/18/2026) for in-depth description on operator precedence, including explanation of precedence of bitwise operators
+
 this file is under a Creative Commons Zero v1.0 Universal (CC0) license, and as such may be copied, modified, and distributed freely.
 see https://creativecommons.org/publicdomain/zero/1.0/deed.en for more information
 */
