@@ -379,6 +379,42 @@ public class javaScratch {
 
     }
 
+    static void booleans() {
+
+        /*
+        Booleans
+            Booleans are effectively bits, reading "true," or "false;" alternatively 0 or 1
+            Boolean expressions
+                comparison operators (<, >, <=, >=, ==) naturally return a boolean
+                e.g. x = (7 <= 9) // x is true
+            Results of boolean expressions can be stored in a boolean variable
+            Logic gates
+                booleans are what primarily interact with logic gates (&&, ||, !)
+                logic gates between two boolean values return a boolean
+        */
+
+        int x = 10;
+        int y = 9;
+        System.out.println(x > y); // returns true, becase x is greater than y
+        System.out.println(x == 10); // returns true, because x does equal 10
+        System.out.println((10 == 15) + "\n"); // returns false, because 10 does not equal 15
+
+        // you can also store the result in a boolean variable
+        boolean greater = x > y; // true
+        System.out.println(greater + "\n"); // identical to System.out.println(x > y);
+
+        boolean bool1 = true;
+        boolean bool2 = true;
+        boolean bool3 = false;
+        boolean bool4 = true;
+
+        System.out.println(bool1 && bool2); // true--both variables are true
+        System.out.println(bool1 && bool3); // false--bool3 is false
+        System.out.println(bool1 || bool3); // true--only one variable needs to be true, i.e. bool1
+        System.out.println((bool3 || !bool4) + "\n"); // false--bool3 and the inverse (NOT) of bool4 are both false
+
+    }
+
     static void scratch() {
 
         // experimentation with small, independent builds
@@ -395,6 +431,7 @@ public class javaScratch {
         //operators();
         //strings();
         //math();
+        booleans();
 
         //scratch();
 
